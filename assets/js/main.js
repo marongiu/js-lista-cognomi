@@ -9,7 +9,10 @@ var cognomi = ["Bianchi", "Zossi", "Perlari", "Lodigiani", "Mastrobattista", "Ve
 
 if (isNaN(cognome)) {
   cognomi.push(cognome);
-  console.log(cognomi);
+  cognomi.sort();
 } else {
   console.log("Devi darmi un cognome");
 }
+
+// Riordino l'array
+console.log(cognomi);
