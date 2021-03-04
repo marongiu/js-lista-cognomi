@@ -3,10 +3,13 @@ var cognome = prompt("Dammi il tuo cognome:");
 
 // creo un array di cognomi
 
-var cognomi = ["Bianchi", "Rossi", "Perlari", "Lodigiani", "Mastrobattista", "Verdi"]
+var cognomi = ["Bianchi", "Zossi", "Perlari", "Lodigiani", "Mastrobattista", "Verdi"];
 
-// inserire il cognome nell'array
+// Pusho all'interno dell'array pushando solamente se è un cognome
 
-cognomi.push(cognome);
-
-// ordino alfabeticamente la lista
+if (isNaN(cognome)) {
+  cognomi.push(cognome);
+  console.log(cognomi);
+} else {
+  console.log("Devi darmi un cognome");
+}
