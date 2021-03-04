@@ -5,7 +5,7 @@ cognome = cognome[0].toUpperCase() + cognome.substring(1);
 
 // creo un array di cognomi
 
-var cognomi = ["Bianchi", "Zossi", "Perlari", "Lodigiani", "Mastrobattista", "Verdi"];
+var cognomi = ["Bianchi", "Rossi", "Perlari", "Lodigiani", "Mastrobattista", "Verdi"];
 
 // Pusho all'interno dell'array pushando solamente se è un cognome
 
@@ -17,5 +17,6 @@ if (isNaN(cognome)) {
   console.log("Devi darmi un cognome");
 }
 
+document.getElementById('lista').innerHTML = "<li>" + cognomi + "</li>";
 console.log(cognomi);
 // Riordino l'array
