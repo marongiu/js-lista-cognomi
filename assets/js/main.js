@@ -1,5 +1,7 @@
 // Chiedere all’utente il cognome
 var cognome = prompt("Dammi il tuo cognome:");
+// Capitalizzo la prima lettera altrimenti mi ordina in base a minuscolo o maiuscolo
+cognome = cognome[0].toUpperCase() + cognome.substring(1);
 
 // creo un array di cognomi
 
@@ -9,10 +11,11 @@ var cognomi = ["Bianchi", "Zossi", "Perlari", "Lodigiani", "Mastrobattista", "Ve
 
 if (isNaN(cognome)) {
   cognomi.push(cognome);
+  // inserisco il sort per ordinare alfabeticamente
   cognomi.sort();
 } else {
   console.log("Devi darmi un cognome");
 }
 
-// Riordino l'array
 console.log(cognomi);
+// Riordino l'array
