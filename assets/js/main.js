@@ -13,11 +13,14 @@ if (isNaN(cognome)) {
   cognomi.push(cognome);
   // inserisco il sort per ordinare alfabeticamente
   cognomi.sort();
+  // Stabilisco l'ordine all'interno della lista
+  var posizione = cognomi.indexOf(cognome);
+  document.getElementById('posizione').innerHTML = "La tua posizione nella lista: " + posizione;
+  // Stampo
   document.getElementById('lista').innerHTML = "<li>" + cognomi + "</li>";
 } else {
   document.getElementById('wrong').innerHTML = "Devi darmi un cognome";
   console.log("Devi darmi un cognome");
 }
 
-console.log(cognomi);
 // Riordino l'array
