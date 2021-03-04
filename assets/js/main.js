@@ -14,7 +14,7 @@ if (isNaN(cognome)) {
   // inserisco il sort per ordinare alfabeticamente
   cognomi.sort();
   // Stabilisco l'ordine all'interno della lista
-  var posizione = cognomi.indexOf(cognome);
+  var posizione = cognomi.indexOf(cognome)+1;
   document.getElementById('posizione').innerHTML = "La tua posizione nella lista: " + posizione;
   // Stampo
   document.getElementById('lista').innerHTML = "<li>" + cognomi + "</li>";
